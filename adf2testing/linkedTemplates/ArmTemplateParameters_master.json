@@ -1,0 +1,39 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "adf2testing"
+		},
+		"AzureSqlDatabase1_connectionString": {
+			"value": ""
+		},
+		"SqlServer1_connectionString": {
+			"value": ""
+		},
+		"SqlServer1_onprimese_connectionString": {
+			"value": ""
+		},
+		"cdc_onprimese_connectionString": {
+			"value": ""
+		},
+		"linked_service_adl_accountKey": {
+			"value": ""
+		},
+		"linked_service_blob_connectionString": {
+			"value": ""
+		},
+		"sql_connectionString": {
+			"value": ""
+		},
+		"linked_service_adl_properties_typeProperties_url": {
+			"value": "https://datalake3adftraining.dfs.core.windows.net/"
+		},
+		"containerUri": {
+			"value": ""
+		},
+		"containerSasToken": {
+			"value": ""
+		}
+	}
+}
