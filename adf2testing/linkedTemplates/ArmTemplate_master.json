@@ -35,9 +35,17 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'connectionString' of 'sql'"
 		},
+		"RestService1_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://en.wikipedia.org/w/api.php?action=query&prop=extracts&format=json&titles=Artificial_intelligence"
+		},
 		"linked_service_adl_properties_typeProperties_url": {
 			"type": "string",
 			"defaultValue": "https://datalake3adftraining.dfs.core.windows.net/"
+		},
+		"trigger1_properties_typeProperties_scope": {
+			"type": "string",
+			"defaultValue": "/subscriptions/8446571f-23ec-4eb5-ad6a-6638043f3281/resourceGroups/adf_training/providers/Microsoft.Storage/storageAccounts/input2adf"
 		},
 		"containerUri": {
 			"type": "string",
@@ -78,8 +86,14 @@
 					"sql_connectionString": {
 						"value": "[parameters('sql_connectionString')]"
 					},
+					"RestService1_properties_typeProperties_url": {
+						"value": "[parameters('RestService1_properties_typeProperties_url')]"
+					},
 					"linked_service_adl_properties_typeProperties_url": {
 						"value": "[parameters('linked_service_adl_properties_typeProperties_url')]"
+					},
+					"trigger1_properties_typeProperties_scope": {
+						"value": "[parameters('trigger1_properties_typeProperties_scope')]"
 					}
 				}
 			},
